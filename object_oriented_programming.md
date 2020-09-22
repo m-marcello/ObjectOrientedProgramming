@@ -318,8 +318,8 @@ the collaborations can be nicely displayed by lines between the objects while th
 
 In a diagram:
 
-
-```plantuml {r, echo=FALSE}
+<input type="hidden">
+```plantuml
 @startuml DomainModeling
 
 skinparam class {
@@ -364,7 +364,7 @@ class User {
 Library "1" *-d- "1...*" Album
 Album "1" *-d- "1...*" Song
 Queue "1" *--- "1...*" Song
-Admin ---> Queue : manages
+Admin --> Queue : manages
 User -r-> Library : browses
 User -r-> Album : browses
 User -r-> Song : selects
@@ -372,7 +372,7 @@ User -r-> Queue : sends ID
 
 @enduml
 ```
-
+</input>
 ![](DomainModeling.svg)
 
 ---
