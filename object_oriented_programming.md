@@ -321,7 +321,7 @@ In a diagram:
 <details>
     <summary>in PlantUML</summary>
 
-    @startuml DomainModeling
+    @startuml diagrams/DomainModeling
 
     skinparam class {
         BackgroundColor SlateGrey
@@ -398,7 +398,7 @@ In a diagram:
 <details>
     <summary>in PlantUML</summary>
 
-    @startuml CreatingAClassDiagram
+    @startuml diagrams/CreatingAClassDiagram
 
     skinparam class {
         BackgroundColor SlateGrey
@@ -453,7 +453,7 @@ In a diagram:
 <details>
     <summary>in PlantUML</summary>
 
-    @startuml ConvertionIntoCode
+    @startuml diagrams/ConvertionIntoCode
     skinparam class {
         BackgroundColor SlateGrey
         ArrowColor Orange
@@ -521,7 +521,7 @@ In a diagram:
 <details>
     <summary>in PlantUML</summary>
 
-    @startuml Inheritance
+    @startuml diagrams/Inheritance
     skinparam class {
         BackgroundColor SlateGrey
         ArrowColor Orange
@@ -587,7 +587,7 @@ a superclass can have multiple subclasses
 <details>
     <summary>in PlantUML</summary>
 
-    @startuml Interface
+    @startuml diagrams/Interface
     skinparam class {
         BackgroundColor SlateGrey
         ArrowColor Orange
@@ -673,7 +673,7 @@ a superclass can have multiple subclasses
 <details>
     <summary>in PlantUML</summary>
 
-    @startuml Composition
+    @startuml diagrams/Composition
 
     skinparam class {
         BackgroundColor SlateGrey
@@ -721,7 +721,7 @@ a superclass can have multiple subclasses
 <details>
     <summary>in PlantUML</summary>
 
-    @startuml Aggregation
+    @startuml diagrams/Aggregation
     skinparam class {
         BackgroundColor SlateGrey
         ArrowColor Orange
@@ -778,7 +778,7 @@ a superclass can have multiple subclasses
 <details>
     <summary>in PlantUML</summary>
 
-    @startuml InheritanceAndComposition
+    @startuml diagrams/InheritanceAndComposition
     skinparam class {
         BackgroundColor SlateGrey
         ArrowColor Orange
