@@ -372,7 +372,6 @@ User -r-> Queue : sends ID
 
 @enduml
 ```
-</input>
 
 
 ![](DomainModeling.svg)
