@@ -393,7 +393,7 @@ In a diagram:
 ## typical class diagram:
 
 <div hidden>
-    
+
     @startuml CreatingAClassDiagram
 
     skinparam class {
@@ -447,6 +447,7 @@ In a diagram:
 ## exercise: Spaceship Jukebox
 
 <div hidden>
+
     @startuml ConvertionIntoCode
     skinparam class {
         BackgroundColor SlateGrey
@@ -455,7 +456,6 @@ In a diagram:
     }
     skinparam stereotypeCBackgroundColor CadetBlue
     skinparam backgroundColor DarkSlateGrey
-
 
     class Admin {
         - id: integer
@@ -503,6 +503,7 @@ In a diagram:
     }
 
     @enduml
+
 </div>
 
 ![](diagrams/ConvertionIntoCode.svg)
@@ -513,6 +514,7 @@ In a diagram:
 
 ## Inheritance
 <div hidden>
+
     @startuml Inheritance
     skinparam class {
         BackgroundColor SlateGrey
@@ -529,14 +531,17 @@ In a diagram:
         setShield()
         move()
     }
+
     class StarFighter {
         move()
         fireMissile()
     }
+
     class CargoShuttle {
         move()
         dropCargo()
     }
+
     class WarpCruiser {
         move()
     }
@@ -549,6 +554,7 @@ In a diagram:
     note right: Abstract class
 
     @enduml
+
 </div>
 
 ![](diagrams/Inheritance.svg)
@@ -570,10 +576,10 @@ a superclass can have multiple subclasses
     - contains at least one abstract method that will need to be implemented in the subclasses (move() in our  example)
     - in UML indicated by *italic* name
 
-
-
 ## Interface
+
 <div hidden>
+
     @startuml Interface
     skinparam class {
         BackgroundColor SlateGrey
@@ -590,30 +596,37 @@ a superclass can have multiple subclasses
         setShield()
         move()
     }
+
     class StarFighter {
         move()
         draw()
         fireMissile()
     }
+
     class CargoShuttle {
         move()
         draw()
         dropCargo()
     }
+
     class WarpCruiser {
         move()
         draw()
     }
+
     class Asteroid {
         move()
         draw()
     }
+
     interface Movable <<interface>> {
         move()
     }
+
     interface Drawable <<interface>> {
         draw()
     }
+
     hide <<interface>> fields
 
     StarFighter -u-|> SpaceShip
@@ -632,6 +645,7 @@ a superclass can have multiple subclasses
     Drawable -- N1
 
     @enduml
+
 </div>
 
 ![](diagrams/Interface.svg)
@@ -648,7 +662,9 @@ a superclass can have multiple subclasses
 > Program to an interface, not to an implementation
 
 ## Composition
+
 <div hidden>
+
     @startuml Composition
 
     skinparam class {
@@ -662,15 +678,19 @@ a superclass can have multiple subclasses
     class SpaceShip {
     ...
     }
+
     class Engine {
     ...
     }
+
     class Shield {
     ...
     }
+
     class Weapon {
     ...
     }
+
     hide class method
 
     Engine "1..*" ---* "1" SpaceShip
@@ -678,6 +698,7 @@ a superclass can have multiple subclasses
     Weapon "0..*" ---* "1" SpaceShip
 
     @enduml
+
 </div>
 
 ![](diagrams/Composition.svg)
@@ -688,7 +709,9 @@ a superclass can have multiple subclasses
 
 
 ## Aggregation
+
 <div hidden>
+
     @startuml Aggregation
     skinparam class {
         BackgroundColor SlateGrey
@@ -703,16 +726,19 @@ a superclass can have multiple subclasses
     }
     hide Fleet method
     hide Fleet fields
+
     class StarFighter {
         move()
         draw()
         fireMissile()
     }
+
     class CargoShuttle {
         move()
         draw()
         dropCargo()
     }
+
     class WarpCruiser {
         move()
         draw()
@@ -724,6 +750,7 @@ a superclass can have multiple subclasses
 
 
     @enduml
+
 </div>
 
 ![](diagrams/Aggregation.svg)
@@ -740,6 +767,7 @@ a superclass can have multiple subclasses
 ## exercise: Spaceship Jukebox
 
 <div hidden>
+
     @startuml InheritanceAndComposition
     skinparam class {
         BackgroundColor SlateGrey
@@ -793,6 +821,7 @@ a superclass can have multiple subclasses
     class User {
         - id: string
     }
+
     hide <<interface>> fields
 
     Library .u.|> Browsable
@@ -806,6 +835,7 @@ a superclass can have multiple subclasses
     Admin -u-|> User
 
     @enduml
+    
 </div>
 
 ![](diagrams/InheritanceAndComposition.svg)
