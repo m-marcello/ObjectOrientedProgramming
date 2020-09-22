@@ -318,7 +318,6 @@ the collaborations can be nicely displayed by lines between the objects while th
 
 In a diagram:
 
-
 <div hidden>
     @startuml DomainModeling
 
@@ -394,7 +393,9 @@ In a diagram:
 ## typical class diagram:
 
 <div hidden>
+    
     @startuml CreatingAClassDiagram
+
     skinparam class {
         BackgroundColor SlateGrey
         ArrowColor Orange
@@ -402,6 +403,7 @@ In a diagram:
     }
     skinparam stereotypeCBackgroundColor CadetBlue
     skinparam backgroundColor DarkSlateGrey
+
     class Spaceship {
         - name: string="the nameless ship"
         - shieldActive: boolean
@@ -420,6 +422,7 @@ In a diagram:
         {method} + public method
     }
     @enduml
+
 </div>
 
 ![](diagrams/CreatingAClassDiagram.svg)
