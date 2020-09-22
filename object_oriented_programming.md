@@ -318,7 +318,8 @@ the collaborations can be nicely displayed by lines between the objects while th
 
 In a diagram:
 
-<div hidden>
+<details>
+
     @startuml DomainModeling
 
     skinparam class {
@@ -370,7 +371,8 @@ In a diagram:
     User -r-> Queue : sends ID
 
     @enduml
-</div>
+
+</details>
 
 
 ![](diagrams/DomainModeling.svg)
