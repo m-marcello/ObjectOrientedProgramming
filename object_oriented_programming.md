@@ -318,6 +318,8 @@ the collaborations can be nicely displayed by lines between the objects while th
 
 In a diagram:
 
+<!--- use 'plantuml -tsvg FILENAME' to generate the diagrams --->
+
 <details>
     <summary>in PlantUML</summary>
 
