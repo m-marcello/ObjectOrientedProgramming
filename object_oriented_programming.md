@@ -319,7 +319,7 @@ the collaborations can be nicely displayed by lines between the objects while th
 In a diagram:
 
 <details>
-    <summary>PlantUML code</summary>
+    <summary>in PlantUML</summary>
 
     @startuml DomainModeling
 
@@ -395,7 +395,8 @@ In a diagram:
 
 ## typical class diagram:
 
-<div hidden>
+<details>
+    <summary>in PlantUML</summary>
 
     @startuml CreatingAClassDiagram
 
@@ -426,7 +427,7 @@ In a diagram:
     }
     @enduml
 
-</div>
+</details>
 
 ![](diagrams/CreatingAClassDiagram.svg)
 
@@ -449,7 +450,8 @@ In a diagram:
 
 ## exercise: Spaceship Jukebox
 
-<div hidden>
+<details>
+    <summary>in PlantUML</summary>
 
     @startuml ConvertionIntoCode
     skinparam class {
@@ -507,7 +509,7 @@ In a diagram:
 
     @enduml
 
-</div>
+</details>
 
 ![](diagrams/ConvertionIntoCode.svg)
 
@@ -516,7 +518,8 @@ In a diagram:
 # inheritance & composition
 
 ## Inheritance
-<div hidden>
+<details>
+    <summary>in PlantUML</summary>
 
     @startuml Inheritance
     skinparam class {
@@ -558,7 +561,7 @@ In a diagram:
 
     @enduml
 
-</div>
+</details>
 
 ![](diagrams/Inheritance.svg)
 
@@ -581,7 +584,8 @@ a superclass can have multiple subclasses
 
 ## Interface
 
-<div hidden>
+<details>
+    <summary>in PlantUML</summary>
 
     @startuml Interface
     skinparam class {
@@ -649,7 +653,7 @@ a superclass can have multiple subclasses
 
     @enduml
 
-</div>
+</details>
 
 ![](diagrams/Interface.svg)
 
@@ -666,7 +670,8 @@ a superclass can have multiple subclasses
 
 ## Composition
 
-<div hidden>
+<details>
+    <summary>in PlantUML</summary>
 
     @startuml Composition
 
@@ -702,7 +707,7 @@ a superclass can have multiple subclasses
 
     @enduml
 
-</div>
+</details>
 
 ![](diagrams/Composition.svg)
 
@@ -713,7 +718,8 @@ a superclass can have multiple subclasses
 
 ## Aggregation
 
-<div hidden>
+<details>
+    <summary>in PlantUML</summary>
 
     @startuml Aggregation
     skinparam class {
@@ -754,7 +760,7 @@ a superclass can have multiple subclasses
 
     @enduml
 
-</div>
+</details>
 
 ![](diagrams/Aggregation.svg)
 
@@ -769,7 +775,8 @@ a superclass can have multiple subclasses
 
 ## exercise: Spaceship Jukebox
 
-<div hidden>
+<details>
+    <summary>in PlantUML</summary>
 
     @startuml InheritanceAndComposition
     skinparam class {
@@ -839,7 +846,7 @@ a superclass can have multiple subclasses
 
     @enduml
     
-</div>
+</details>
 
 ![](diagrams/InheritanceAndComposition.svg)
 
