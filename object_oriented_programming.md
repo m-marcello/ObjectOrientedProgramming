@@ -318,7 +318,8 @@ the collaborations can be nicely displayed by lines between the objects while th
 
 In a diagram:
 
-<hidden>
+<details>
+    <summary>PlantUML code</summary>
 
     @startuml DomainModeling
 
@@ -372,7 +373,7 @@ In a diagram:
 
     @enduml
 
-</hidden>
+</details>
 
 
 ![](diagrams/DomainModeling.svg)
