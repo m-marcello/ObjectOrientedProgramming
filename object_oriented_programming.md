@@ -319,7 +319,7 @@ the collaborations can be nicely displayed by lines between the objects while th
 In a diagram:
 
 
-```plantuml
+```plantuml {r, echo=FALSE}
 @startuml DomainModeling
 
 skinparam class {
