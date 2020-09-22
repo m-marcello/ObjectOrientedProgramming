@@ -318,63 +318,63 @@ the collaborations can be nicely displayed by lines between the objects while th
 
 In a diagram:
 
-<input type="hidden">
-```plantuml
-@startuml DomainModeling
 
-skinparam class {
-    BackgroundColor SlateGrey
-    ArrowColor Orange
-    BorderColor Black
-}
-skinparam stereotypeCBackgroundColor CadetBlue
-skinparam backgroundColor DarkSlateGrey
+<div hidden>
+    @startuml DomainModeling
 
-
-class Admin {
-
-}
-
-class Song {
-    {method} play
-}
-
-class Album {
-    {method} display song
-    {method} select song
-}
-
-class Library {
-    {method} display album
-    {method} select album
-}
-
-class Queue {
-    {method} add song
-    {method} get next song
-    {method} remove song
-    {method} identify user
-
-}
-
-class User {
-
-}
-
-Library "1" *-d- "1...*" Album
-Album "1" *-d- "1...*" Song
-Queue "1" *--- "1...*" Song
-Admin --> Queue : manages
-User -r-> Library : browses
-User -r-> Album : browses
-User -r-> Song : selects
-User -r-> Queue : sends ID
-
-@enduml
-```
+    skinparam class {
+        BackgroundColor SlateGrey
+        ArrowColor Orange
+        BorderColor Black
+    }
+    skinparam stereotypeCBackgroundColor CadetBlue
+    skinparam backgroundColor DarkSlateGrey
 
 
-![](DomainModeling.svg)
+    class Admin {
+
+    }
+
+    class Song {
+        {method} play
+    }
+
+    class Album {
+        {method} display song
+        {method} select song
+    }
+
+    class Library {
+        {method} display album
+        {method} select album
+    }
+
+    class Queue {
+        {method} add song
+        {method} get next song
+        {method} remove song
+        {method} identify user
+
+    }
+
+    class User {
+
+    }
+
+    Library "1" *-d- "1...*" Album
+    Album "1" *-d- "1...*" Song
+    Queue "1" *--- "1...*" Song
+    Admin --> Queue : manages
+    User -r-> Library : browses
+    User -r-> Album : browses
+    User -r-> Song : selects
+    User -r-> Queue : sends ID
+
+    @enduml
+</div>
+
+
+![](diagrams/DomainModeling.svg)
 
 ---
 
@@ -393,35 +393,36 @@ User -r-> Queue : sends ID
 
 ## typical class diagram:
 
+<div hidden>
+    @startuml CreatingAClassDiagram
+    skinparam class {
+        BackgroundColor SlateGrey
+        ArrowColor Orange
+        BorderColor Black
+    }
+    skinparam stereotypeCBackgroundColor CadetBlue
+    skinparam backgroundColor DarkSlateGrey
+    class Spaceship {
+        - name: string="the nameless ship"
+        - shieldActive: boolean
+        - position: coordinate
+        + getShieldStrength(): integer
+        + reduceShields(integer)
+        + getPosition(): coordinate
+        + move(direction)
+        - setPosition(coordinate)
+    }
 
-```plantuml
-@startuml
-skinparam class {
-    BackgroundColor SlateGrey
-    ArrowColor Orange
-    BorderColor Black
-}
-skinparam stereotypeCBackgroundColor CadetBlue
-skinparam backgroundColor DarkSlateGrey
-class Spaceship {
-    - name: string="the nameless ship"
-    - shieldActive: boolean
-    - position: coordinate
-    + getShieldStrength(): integer
-    + reduceShields(integer)
-    + getPosition(): coordinate
-    + move(direction)
-    - setPosition(coordinate)
-}
+    class Legend {
+        - private attribute
+        + public attribute
+        {method} - private method
+        {method} + public method
+    }
+    @enduml
+</div>
 
-class Legend {
-    - private attribute
-    + public attribute
-    {method} - private method
-    {method} + public method
-}
-@enduml
-```
+![](diagrams/CreatingAClassDiagram.svg)
 
 ---
 
@@ -442,108 +443,112 @@ class Legend {
 
 ## exercise: Spaceship Jukebox
 
-```plantuml
-@startuml
-skinparam class {
-    BackgroundColor SlateGrey
-    ArrowColor Orange
-    BorderColor Black
-}
-skinparam stereotypeCBackgroundColor CadetBlue
-skinparam backgroundColor DarkSlateGrey
+<div hidden>
+    @startuml ConvertionIntoCode
+    skinparam class {
+        BackgroundColor SlateGrey
+        ArrowColor Orange
+        BorderColor Black
+    }
+    skinparam stereotypeCBackgroundColor CadetBlue
+    skinparam backgroundColor DarkSlateGrey
 
 
-class Admin {
-    - id: integer
-    + getID(): integer
-    + createUser(): User
-    + manageQueue()
-}
+    class Admin {
+        - id: integer
+        + getID(): integer
+        + createUser(): User
+        + manageQueue()
+    }
 
-class Song {
-    - title: string
-    - artist: string
-    - album: string
-    + getName(): string
-    + getArtist(): string
-    + getAlbum(): string
-    + play()
-}
+    class Song {
+        - title: string
+        - artist: string
+        - album: string
+        + getName(): string
+        + getArtist(): string
+        + getAlbum(): string
+        + play()
+    }
 
-class Album {
-    - name: string
-    - songs: Song[1...*]
-    + getName(): string
-    + getSongTitles(): string[1...*]
-    + getSong(string): Song
-}
+    class Album {
+        - name: string
+        - songs: Song[1...*]
+        + getName(): string
+        + getSongTitles(): string[1...*]
+        + getSong(string): Song
+    }
 
-class Library {
-    - albums: Album[1...*]
-    + getAlbumTitles(): string[1...*]
-    + getAlbum(string): Album
-}
+    class Library {
+        - albums: Album[1...*]
+        + getAlbumTitles(): string[1...*]
+        + getAlbum(string): Album
+    }
 
-class Queue {
-    - current: Song
-    - next: Song linked list
-    - songsByUser: dict
-    + add(Song, integer)
-    + remove(Song)
-    - getNextSong(): Song
-}
+    class Queue {
+        - current: Song
+        - next: Song linked list
+        - songsByUser: dict
+        + add(Song, integer)
+        + remove(Song)
+        - getNextSong(): Song
+    }
 
-class User {
-    - id: integer
-    + getID(): integer
-}
+    class User {
+        - id: integer
+        + getID(): integer
+    }
 
-@enduml
-```
+    @enduml
+</div>
+
+![](diagrams/ConvertionIntoCode.svg)
 
 ---
 
 # inheritance & composition
 
 ## Inheritance
-```plantuml
-@startuml
-skinparam class {
-    BackgroundColor SlateGrey
-    ArrowColor Orange
-    BorderColor Black
-}
-skinparam stereotypeCBackgroundColor CadetBlue
-skinparam backgroundColor DarkSlateGrey
+<div hidden>
+    @startuml Inheritance
+    skinparam class {
+        BackgroundColor SlateGrey
+        ArrowColor Orange
+        BorderColor Black
+    }
+    skinparam stereotypeCBackgroundColor CadetBlue
+    skinparam backgroundColor DarkSlateGrey
 
-abstract class SpaceShip {
-    shieldActive: bool
-    shieldStrength: int
-    position: coordinates
-    setShield()
-    move()
-}
-class StarFighter {
-    move()
-    fireMissile()
-}
-class CargoShuttle {
-    move()
-    dropCargo()
-}
-class WarpCruiser {
-    move()
-}
+    abstract class SpaceShip {
+        shieldActive: bool
+        shieldStrength: int
+        position: coordinates
+        setShield()
+        move()
+    }
+    class StarFighter {
+        move()
+        fireMissile()
+    }
+    class CargoShuttle {
+        move()
+        dropCargo()
+    }
+    class WarpCruiser {
+        move()
+    }
 
-StarFighter ---|> SpaceShip
-CargoShuttle ---|> SpaceShip
-WarpCruiser ---|> SpaceShip
+    StarFighter ---|> SpaceShip
+    CargoShuttle ---|> SpaceShip
+    WarpCruiser ---|> SpaceShip
 
-abstract class SpaceShip
-note right: Abstract class
+    abstract class SpaceShip
+    note right: Abstract class
 
-@enduml
-```
+    @enduml
+</div>
+
+![](diagrams/Inheritance.svg)
 
 - describes an '... is a (type or kind of)...' relationship:
     - 'A StarFighter is a (type or kind of) SpaceShip.'
@@ -565,66 +570,68 @@ a superclass can have multiple subclasses
 
 
 ## Interface
-```plantuml
-@startuml
-skinparam class {
-    BackgroundColor SlateGrey
-    ArrowColor Orange
-    BorderColor Black
-}
-skinparam stereotypeCBackgroundColor CadetBlue
-skinparam backgroundColor DarkSlateGrey
+<div hidden>
+    @startuml Interface
+    skinparam class {
+        BackgroundColor SlateGrey
+        ArrowColor Orange
+        BorderColor Black
+    }
+    skinparam stereotypeCBackgroundColor CadetBlue
+    skinparam backgroundColor DarkSlateGrey
 
-abstract class SpaceShip {
-    shieldActive: bool
-    shieldStrength: int
-    position: coordinates
-    setShield()
-    move()
-}
-class StarFighter {
-    move()
-    draw()
-    fireMissile()
-}
-class CargoShuttle {
-    move()
-    draw()
-    dropCargo()
-}
-class WarpCruiser {
-    move()
-    draw()
-}
-class Asteroid {
-    move()
-    draw()
-}
-interface Movable <<interface>> {
-    move()
-}
-interface Drawable <<interface>> {
-    draw()
-}
-hide <<interface>> fields
+    abstract class SpaceShip {
+        shieldActive: bool
+        shieldStrength: int
+        position: coordinates
+        setShield()
+        move()
+    }
+    class StarFighter {
+        move()
+        draw()
+        fireMissile()
+    }
+    class CargoShuttle {
+        move()
+        draw()
+        dropCargo()
+    }
+    class WarpCruiser {
+        move()
+        draw()
+    }
+    class Asteroid {
+        move()
+        draw()
+    }
+    interface Movable <<interface>> {
+        move()
+    }
+    interface Drawable <<interface>> {
+        draw()
+    }
+    hide <<interface>> fields
 
-StarFighter -u-|> SpaceShip
-CargoShuttle -u-|> SpaceShip
-WarpCruiser -u-|> SpaceShip
-SpaceShip .u.|> Movable
-Asteroid .u.|> Movable
-Asteroid .u.|> Drawable
-StarFighter .u.|> Drawable
-CargoShuttle .u.|> Drawable
-WarpCruiser .u.|> Drawable
+    StarFighter -u-|> SpaceShip
+    CargoShuttle -u-|> SpaceShip
+    WarpCruiser -u-|> SpaceShip
+    SpaceShip .u.|> Movable
+    Asteroid .u.|> Movable
+    Asteroid .u.|> Drawable
+    StarFighter .u.|> Drawable
+    CargoShuttle .u.|> Drawable
+    WarpCruiser .u.|> Drawable
 
-note "Interface" as N1
+    note "Interface" as N1
 
-Movable -- N1
-Drawable -- N1
+    Movable -- N1
+    Drawable -- N1
 
-@enduml
-```
+    @enduml
+</div>
+
+![](diagrams/Interface.svg)
 
 - list of method prototypes for a class to implement
 - doesn't contain any actual behavior
@@ -638,37 +645,39 @@ Drawable -- N1
 > Program to an interface, not to an implementation
 
 ## Composition
-```plantuml
-@startuml
-skinparam class {
-    BackgroundColor SlateGrey
-    ArrowColor Orange
-    BorderColor Black
-}
-skinparam stereotypeCBackgroundColor CadetBlue
-skinparam backgroundColor DarkSlateGrey
+<div hidden>
+    @startuml Composition
 
-class SpaceShip {
-...
-}
-class Engine {
-...
-}
-class Shield {
-...
-}
-class Weapon {
-...
-}
-hide class method
+    skinparam class {
+        BackgroundColor SlateGrey
+        ArrowColor Orange
+        BorderColor Black
+    }
+    skinparam stereotypeCBackgroundColor CadetBlue
+    skinparam backgroundColor DarkSlateGrey
 
-Engine "1..*" ---* "1" SpaceShip
-Shield ---* SpaceShip
-Weapon "0..*" ---* "1" SpaceShip
+    class SpaceShip {
+    ...
+    }
+    class Engine {
+    ...
+    }
+    class Shield {
+    ...
+    }
+    class Weapon {
+    ...
+    }
+    hide class method
 
+    Engine "1..*" ---* "1" SpaceShip
+    Shield ---* SpaceShip
+    Weapon "0..*" ---* "1" SpaceShip
 
-@enduml
-```
+    @enduml
+</div>
+
+![](diagrams/Composition.svg)
 
 - describes a '... owns a(n) ...' relationship
 - key difference to aggregation: if the owning object is destroyed, the contained objects are destroyed as well
@@ -676,43 +685,45 @@ Weapon "0..*" ---* "1" SpaceShip
 
 
 ## Aggregation
-```plantuml
-@startuml
-skinparam class {
-    BackgroundColor SlateGrey
-    ArrowColor Orange
-    BorderColor Black
-}
-skinparam stereotypeCBackgroundColor CadetBlue
-skinparam backgroundColor DarkSlateGrey
+<div hidden>
+    @startuml Aggregation
+    skinparam class {
+        BackgroundColor SlateGrey
+        ArrowColor Orange
+        BorderColor Black
+    }
+    skinparam stereotypeCBackgroundColor CadetBlue
+    skinparam backgroundColor DarkSlateGrey
 
-class Fleet {
+    class Fleet {
 
-}
-hide Fleet method
-hide Fleet fields
-class StarFighter {
-    move()
-    draw()
-    fireMissile()
-}
-class CargoShuttle {
-    move()
-    draw()
-    dropCargo()
-}
-class WarpCruiser {
-    move()
-    draw()
-}
+    }
+    hide Fleet method
+    hide Fleet fields
+    class StarFighter {
+        move()
+        draw()
+        fireMissile()
+    }
+    class CargoShuttle {
+        move()
+        draw()
+        dropCargo()
+    }
+    class WarpCruiser {
+        move()
+        draw()
+    }
 
-StarFighter "0..*" ---o "1" Fleet
-CargoShuttle "0..*" ---o "1" Fleet
-WarpCruiser "0..*" ---o "1" Fleet
+    StarFighter "0..*" ---o "1" Fleet
+    CargoShuttle "0..*" ---o "1" Fleet
+    WarpCruiser "0..*" ---o "1" Fleet
 
 
-@enduml
-```
+    @enduml
+</div>
+
+![](diagrams/Aggregation.svg)
 
 - describes a '... uses a(n) ...' relationship:
     - 'A Fleet uses a SpaceShip.'
@@ -725,74 +736,76 @@ WarpCruiser "0..*" ---o "1" Fleet
 
 ## exercise: Spaceship Jukebox
 
-```plantuml
-@startuml
-skinparam class {
-    BackgroundColor SlateGrey
-    ArrowColor Orange
-    BorderColor Black
-}
-skinparam stereotypeCBackgroundColor CadetBlue
-skinparam backgroundColor DarkSlateGrey
+<div hidden>
+    @startuml InheritanceAndComposition
+    skinparam class {
+        BackgroundColor SlateGrey
+        ArrowColor Orange
+        BorderColor Black
+    }
+    skinparam stereotypeCBackgroundColor CadetBlue
+    skinparam backgroundColor DarkSlateGrey
 
-interface Browsable <<interface>> {
-    + getTitles(self): string[1..*]
-    + getItem(self, string): item
-}
+    interface Browsable <<interface>> {
+        + getTitles(self): string[1..*]
+        + getItem(self, string): item
+    }
 
-interface Identifyable <<interface>> {
-    + getID(self): string
-}
+    interface Identifyable <<interface>> {
+        + getID(self): string
+    }
 
-class Admin {
-    + createUser(): User
-    + manageQueue()
-}
+    class Admin {
+        + createUser(): User
+        + manageQueue()
+    }
 
-class Song {
-    - id: string
-    - artist: string
-    - album: string
-    + getArtist(): string
-    + getAlbum(): string
-    + play()
-}
+    class Song {
+        - id: string
+        - artist: string
+        - album: string
+        + getArtist(): string
+        + getAlbum(): string
+        + play()
+    }
 
-class Album {
-    - id: string
-    - songs: Song[1...*]
-}
+    class Album {
+        - id: string
+        - songs: Song[1...*]
+    }
 
-class Library {
-    - albums: Album[1...*]
-}
+    class Library {
+        - albums: Album[1...*]
+    }
 
-class Queue {
-    - current: Song
-    - next: Song linked list
-    - songsByUser: dict
-    + add(Song, integer)
-    + remove(Song)
-    - getNextSong(): Song
-}
+    class Queue {
+        - current: Song
+        - next: Song linked list
+        - songsByUser: dict
+        + add(Song, integer)
+        + remove(Song)
+        - getNextSong(): Song
+    }
 
-class User {
-    - id: string
-}
-hide <<interface>> fields
+    class User {
+        - id: string
+    }
+    hide <<interface>> fields
 
-Library .u.|> Browsable
-Album .u.|> Browsable
-Album .u.|> Identifyable
-Song .u.|> Identifyable
-User .u.|> Identifyable
-Song "1..*" --* "1" Album
-Album "1..*" --* "1" Library
-Song "0..*" --o "1" Queue
-Admin -u-|> User
+    Library .u.|> Browsable
+    Album .u.|> Browsable
+    Album .u.|> Identifyable
+    Song .u.|> Identifyable
+    User .u.|> Identifyable
+    Song "1..*" --* "1" Album
+    Album "1..*" --* "1" Library
+    Song "0..*" --o "1" Queue
+    Admin -u-|> User
 
-@enduml
-```
+    @enduml
+</div>
+
+![](diagrams/InheritanceAndComposition.svg)
 
 ---
 

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="245px" preserveAspectRatio="none" style="width:316px;height:245px;background:#2F4F4F;" version="1.1" viewBox="0 0 316 245" width="316px" zoomAndPan="magnify"><defs><filter height="300%" id="f1gwua05wfezc5" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class SpaceShip--><rect fill="#708090" filter="url(#f1gwua05wfezc5)" height="52.8047" id="SpaceShip" style="stroke: #000000; stroke-width: 1.5;" width="98" x="102.5" y="182"/><ellipse cx="117.5" cy="198" fill="#5F9EA0" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M120.4688,203.6406 Q119.8906,203.9375 119.25,204.0781 Q118.6094,204.2344 117.9063,204.2344 Q115.4063,204.2344 114.0781,202.5938 Q112.7656,200.9375 112.7656,197.8125 Q112.7656,194.6875 114.0781,193.0313 Q115.4063,191.375 117.9063,191.375 Q118.6094,191.375 119.25,191.5313 Q119.9063,191.6875 120.4688,191.9844 L120.4688,194.7031 Q119.8438,194.125 119.25,193.8594 Q118.6563,193.5781 118.0313,193.5781 Q116.6875,193.5781 116,194.6563 Q115.3125,195.7188 115.3125,197.8125 Q115.3125,199.9063 116,200.9844 Q116.6875,202.0469 118.0313,202.0469 Q118.6563,202.0469 119.25,201.7813 Q119.8438,201.5 120.4688,200.9219 L120.4688,203.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="66" x="131.5" y="202.1543">SpaceShip</text><line style="stroke: #000000; stroke-width: 1.5;" x1="103.5" x2="199.5" y1="214" y2="214"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="12" x="108.5" y="228.2104">...</text><!--class Engine--><rect fill="#708090" filter="url(#f1gwua05wfezc5)" height="52.8047" id="Engine" style="stroke: #000000; stroke-width: 1.5;" width="75" x="6" y="8"/><ellipse cx="21" cy="24" fill="#5F9EA0" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M23.9688,29.6406 Q23.3906,29.9375 22.75,30.0781 Q22.1094,30.2344 21.4063,30.2344 Q18.9063,30.2344 17.5781,28.5938 Q16.2656,26.9375 16.2656,23.8125 Q16.2656,20.6875 17.5781,19.0313 Q18.9063,17.375 21.4063,17.375 Q22.1094,17.375 22.75,17.5313 Q23.4063,17.6875 23.9688,17.9844 L23.9688,20.7031 Q23.3438,20.125 22.75,19.8594 Q22.1563,19.5781 21.5313,19.5781 Q20.1875,19.5781 19.5,20.6563 Q18.8125,21.7188 18.8125,23.8125 Q18.8125,25.9063 19.5,26.9844 Q20.1875,28.0469 21.5313,28.0469 Q22.1563,28.0469 22.75,27.7813 Q23.3438,27.5 23.9688,26.9219 L23.9688,29.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="43" x="35" y="28.1543">Engine</text><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="80" y1="40" y2="40"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="12" x="12" y="54.2104">...</text><!--class Shield--><rect fill="#708090" filter="url(#f1gwua05wfezc5)" height="52.8047" id="Shield" style="stroke: #000000; stroke-width: 1.5;" width="70" x="116.5" y="8"/><ellipse cx="131.5" cy="24" fill="#5F9EA0" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M134.4688,29.6406 Q133.8906,29.9375 133.25,30.0781 Q132.6094,30.2344 131.9063,30.2344 Q129.4063,30.2344 128.0781,28.5938 Q126.7656,26.9375 126.7656,23.8125 Q126.7656,20.6875 128.0781,19.0313 Q129.4063,17.375 131.9063,17.375 Q132.6094,17.375 133.25,17.5313 Q133.9063,17.6875 134.4688,17.9844 L134.4688,20.7031 Q133.8438,20.125 133.25,19.8594 Q132.6563,19.5781 132.0313,19.5781 Q130.6875,19.5781 130,20.6563 Q129.3125,21.7188 129.3125,23.8125 Q129.3125,25.9063 130,26.9844 Q130.6875,28.0469 132.0313,28.0469 Q132.6563,28.0469 133.25,27.7813 Q133.8438,27.5 134.4688,26.9219 L134.4688,29.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="38" x="145.5" y="28.1543">Shield</text><line style="stroke: #000000; stroke-width: 1.5;" x1="117.5" x2="185.5" y1="40" y2="40"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="12" x="122.5" y="54.2104">...</text><!--class Weapon--><rect fill="#708090" filter="url(#f1gwua05wfezc5)" height="52.8047" id="Weapon" style="stroke: #000000; stroke-width: 1.5;" width="83" x="222" y="8"/><ellipse cx="237" cy="24" fill="#5F9EA0" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M239.9688,29.6406 Q239.3906,29.9375 238.75,30.0781 Q238.1094,30.2344 237.4063,30.2344 Q234.9063,30.2344 233.5781,28.5938 Q232.2656,26.9375 232.2656,23.8125 Q232.2656,20.6875 233.5781,19.0313 Q234.9063,17.375 237.4063,17.375 Q238.1094,17.375 238.75,17.5313 Q239.4063,17.6875 239.9688,17.9844 L239.9688,20.7031 Q239.3438,20.125 238.75,19.8594 Q238.1563,19.5781 237.5313,19.5781 Q236.1875,19.5781 235.5,20.6563 Q234.8125,21.7188 234.8125,23.8125 Q234.8125,25.9063 235.5,26.9844 Q236.1875,28.0469 237.5313,28.0469 Q238.1563,28.0469 238.75,27.7813 Q239.3438,27.5 239.9688,26.9219 L239.9688,29.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="51" x="251" y="28.1543">Weapon</text><line style="stroke: #000000; stroke-width: 1.5;" x1="223" x2="304" y1="40" y2="40"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="12" x="228" y="54.2104">...</text><!--link Engine to SpaceShip--><path d="M60.1383,61.3062 C78.2664,90.5126 107.413,137.471 127.9003,170.4783 " fill="none" id="Engine-SpaceShip" style="stroke: #FFA500; stroke-width: 1.0;"/><polygon fill="#FFA500" points="135.02,181.9489,135.2543,174.7416,128.6915,171.7533,128.4572,178.9606,135.02,181.9489" style="stroke: #FFA500; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="23" x="38.2623" y="80.9135">1..*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="122.028" y="170.7558">1</text><!--link Shield to SpaceShip--><path d="M151.5,61.3062 C151.5,90.0002 151.5,135.8288 151.5,168.7283 " fill="none" id="Shield-SpaceShip" style="stroke: #FFA500; stroke-width: 1.0;"/><polygon fill="#FFA500" points="151.5,181.9489,155.5,175.9489,151.5,169.9489,147.5,175.9489,151.5,181.9489" style="stroke: #FFA500; stroke-width: 1.0;"/><!--link Weapon to SpaceShip--><path d="M246.2455,61.3062 C227.3635,90.6407 196.9545,137.8832 175.6947,170.9118 " fill="none" id="Weapon-SpaceShip" style="stroke: #FFA500; stroke-width: 1.0;"/><polygon fill="#FFA500" points="168.5904,181.9489,175.2013,179.0687,175.0854,171.8585,168.4744,174.7387,168.5904,181.9489" style="stroke: #FFA500; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="23" x="216.9555" y="80.9135">0..*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="163.7812" y="170.7558">1</text><!--
+@startuml Composition
+
+skinparam class {
+    BackgroundColor SlateGrey
+    ArrowColor Orange
+    BorderColor Black
+}
+skinparam stereotypeCBackgroundColor CadetBlue
+skinparam backgroundColor DarkSlateGrey
+
+class SpaceShip {
+...
+}
+class Engine {
+...
+}
+class Shield {
+...
+}
+class Weapon {
+...
+}
+hide class method
+
+Engine "1..*" - - -* "1" SpaceShip
+Shield - - -* SpaceShip
+Weapon "0..*" - - -* "1" SpaceShip
+
+@enduml
+
+PlantUML version 1.2017.15(Mon Jul 03 18:45:34 CEST 2017)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.8+10-post-Ubuntu-0ubuntu118.04.1
+Operating System: Linux
+OS Version: 4.15.0-117-generic
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
