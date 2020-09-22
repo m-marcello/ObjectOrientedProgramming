@@ -318,9 +318,9 @@ the collaborations can be nicely displayed by lines between the objects while th
 
 In a diagram:
 
-<div hidden>
+
 ```plantuml
-@startuml
+@startuml DomainModeling
 
 skinparam class {
     BackgroundColor SlateGrey
@@ -373,7 +373,7 @@ User -r-> Queue : sends ID
 @enduml
 ```
 
-</div>
+![](DomainModeling.svg)
 
 ---
 
